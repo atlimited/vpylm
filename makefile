@@ -1,8 +1,8 @@
 CC = clang++
 LLDB = -g
 BOOST = -lboost_serialization
-PYTHON = -lboost_python36
-INCLUDE = -I/usr/local/lib `python3.6-config --include`
+PYTHON = -lboost_python3
+INCLUDE = -I/usr/local/lib `python3.6-config --includes`
 LDFLAGS = `python3.6-config --ldflags`
 
 hpylm:

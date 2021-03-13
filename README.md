@@ -31,12 +31,15 @@ orders of generation.
 
 ```zsh
 % python3 train.py -f data/processed/kokoro.txt -r 0.8
+# use docker 
+% docker run -i --mount type=bind,src=${HOME}/vpylm,dst=/workspace/vpylm vpylm python3 train.py -f data/processed/kokoro.txt
 ```
 
 - generate sentence from trained model
 
 ```zsh
 % python3 utils/generate.py
+% docker run -i --mount type=bind,src=${HOME}/vpylm,dst=/workspace/vpylm vpylm python3 utils/generate.py
 ```
 
 ## Experimental Result
